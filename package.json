@@ -1,0 +1,27 @@
+{
+  "name": "smartphone-emulation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "h": "webpack-dev-server --help"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kming9/Smartphone-emulation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kming9/Smartphone-emulation/issues"
+  },
+  "homepage": "https://github.com/Kming9/Smartphone-emulation#readme",
+  "devDependencies": {
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0"
+  }
+}
