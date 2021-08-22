@@ -1,9 +1,8 @@
-import path from 'path';
-const __dirname = path.resolve();
+const path = require('path');
 console.log(__dirname);
 
-export default {
-    mode: 'development', // webpack4 부터 필수
+module.exports = {
+    mode: 'development',
     entry: './src/main.js',
     output: {
         filename: 'index.js',
@@ -11,7 +10,7 @@ export default {
     },
     devServer: {
         static: {
-            directory: __dirname,
+            directory: path.resolve(__dirname),
             watch: true
         },
         hot: true
