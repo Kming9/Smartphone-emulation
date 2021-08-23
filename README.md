@@ -1,5 +1,12 @@
 # Smartphone-emulation
 
+바닐라 스크립트를 이용해 핸드폰 화면과 앱을 에물레이션한 페이지
+
+- 홈 화면과 3개의 앱(알람, 메모, 사진)으로 구성
+- SPA(Single Page Application)으로 구현
+
+
+
 ## Setup
 
 ```bash
@@ -42,4 +49,30 @@ npm run start
    └─ assets            이미지 폴더
 
 ```
+
+
+
+## 동작 화면
+
+### 홈
+
+![HOME](/design/HOME.gif)
+
+
+
+### 알람
+
+![ALARM](/design/ALARM.gif)
+
+
+
+### 메모
+
+![MEMO](/design/MEMO.gif)
+
+
+
+### 사진
+
+![PHOTO](/design/PHOTO.gif)
 
