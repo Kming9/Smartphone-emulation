@@ -21,7 +21,7 @@ export class Photo {
         imgs.forEach(img => {
             const $img = document.createElement('img');
             $img.src = `/src/assets/${img}.jpg`;
-            $img.alt = '이미ㅣ지 실종';
+            $img.alt = '이미지 로딩 실패';
 
             this.$img_list.appendChild($img);
         });
@@ -42,7 +42,7 @@ export class Photo {
 
     mouseScroll(e) {
         const middle = e.target.clientWidth / 2;
-        const move = e.screenX > middle ? 100 : -100;
+        const move = e.clientX > middle ? 100 : -100;
         e.target.scrollBy(move, 0);
     }
 

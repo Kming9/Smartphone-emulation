@@ -21,7 +21,7 @@ export class AlarmList {
         let time = new Date(year, month, day, cur_hour, min).getTime();
         if(time < Date.now()) time += 60*60*24*1000;
 
-        const content = `${isAM ? '오전' : '오후'} ${cur_hour < 10 ? '0'+cur_hour : cur_hour}시 ${min < 10 ? '0'+min : min}분`;
+        const content = `${isAM ? '오전' : '오후'} ${hour < 10 ? '0'+hour : hour}시 ${min < 10 ? '0'+min : min}분`;
 
         copy_alarm.push({ time, content });
         this.setState(copy_alarm);
